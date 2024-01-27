@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Online shopping</title>
+</head>
+<body>
+	<form method="post">
+		{% csrf_token %}
+		<input type="text" name="your_url">
+		<input type="submit" name="">
+		
+	</form>
+	<nav class="navbar navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand">webapp</a>
+		  <form class="d-flex">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		  </form>
+		</div>
+	  </nav>
+{% for i in value %}
+   <img src="{{i}}">
+   
+{% endfor %}	
+
+</body>
+</html>
